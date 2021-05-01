@@ -1,0 +1,39 @@
+Package: lingpsych
+Title: Data and Functions used in the Book "Linear Mixed Models in Linguistics and Psychology: A Comprehensive Introduction"
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Shravan",
+           family = "Vasishth",
+           role = c("aut", "cre"),
+           email = "vasishth.1@osu.edu",
+           comment = c(ORCID = "0000-0003-2027-1994")),
+           person(given = "Daniel",
+           family = "Schad",
+           role = c("aut"),
+           email = "danieljschad@gmail.com",
+           comment = c(ORCID = "0000-0003-2586-6823")),
+           person(given = "Audrey",
+           family = "Bürki-Forschini",
+           role = c("aut"),
+           email = "buerki@uni-potsdam.de",
+           comment = c(ORCID = "0000-0002-1390-2826")),
+           person(given = "Reinhold",
+           family = "Kliegl",
+           role = c("aut"),
+           email = "reinhold.kliegl@gmail.com",
+           comment = c(ORCID = "0000-0002-0180-8488")))
+Description: Data and Functions used in the Book "Linear Mixed Models in Linguistics and Psychology: A Comprehensive Introduction".
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Rdpack
+Suggests:
+    devtools,
+    usethis,
+    dplyr,
+    Rdpack
+RdMacros: Rdpack
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 3.0)
