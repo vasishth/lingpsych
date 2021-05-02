@@ -228,3 +228,14 @@
 #' @references
 #' \insertAllCited{}
 "df_hindi_full"
+
+#' Model fit for an eyetracking reading experiment that records total reading times in milliseconds for a 2x2x2 design. \insertCite{DillonEtAl2013;textual}{lingpsych}
+#'
+#' The dataset is a model fit for an English eyetracking reading study by \insertCite{DillonEtAl2013;textual}{lingpsych}. There are 40 subjects who read 48 items in a Latin square design. The data shown here focus on total reading times at the critical region.
+#'
+#' @format A brms model fit
+#' \describe{
+#' }
+#' @references
+#' \insertAllCited{}
+"dillonE1ttnested"
