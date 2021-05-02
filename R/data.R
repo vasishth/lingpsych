@@ -142,3 +142,89 @@
 #' @references
 #' \insertAllCited{}
 "df_dutch"
+
+#' Data from the Potsdam-Allahabad Hindi Corpus, an eyetracking reading experiment that records various reading measures for a newspaper corpus in Hindi. \insertCite{HusainVasishthNarayanan2015;textual}{lingpsych}
+#'
+#' The dataset is from an eyetracking study by \insertCite{HusainVasishthNarayanan2015;textual}{lingpsych}, and contains various reading measures for a newspaper corpus in Hindi. The data are from a larger data-set and contain 10 subjects who read 83 items. The reading measures shown are for each word in each sentence.
+#'
+#' @format A data frame with 27,066 rows and 33 variables:
+#' \describe{
+#' \item{subj}{The subject id, ranging from 1 to 10.}
+#' \item{expt}{The experiment id.}
+#' \item{item}{The item id, ranging from 1 to 83.}
+#' \item{lang}{The language being investigated.}
+#' \item{session}{There were two sessions, one preceded by an experiment on Urdu, and one followed by Urdu.}
+#' \item{trial}{Trial id.}
+#' \item{roi}{Region of interest in the sentence.}
+#' \item{FFD}{(First-Fixation Duration) Duration of the first fixation on a position if (and only if) the fixation was progressive. Zero otherwise.}
+#' \item{FFP}{(First Fixation Progressive) 0 if material downstream was viewed before the first fixation on this position, 1 otherwise.}
+#' \item{SFD}{(Single Fixation Duration) Duration of the fixation on a position if it was the *only* fixation on this region, i.e. if no subsequent fixation on this position followed. Zero if there were several fixations on this region.}
+#' \item{FPRT}{(First Pass Reading Time, Gaze Duration) Sum of all first-pass fixation durations on a region before *any* other region is fixated. (What exactly constitutes a first pass is determined by the parameter 'regressiveFirstPass'.)}
+#' \item{RBRT}{(Right Bounded Reading Time) Sum of all first-pass fixation durations on a position before another position to the *right* is fixated. (What exactly constitutes a first pass is determined by the parameter 'regressiveFirstPass'.)}
+#' \item{TFT}{(Total Fixation Time) Sum of all fixation durations on a region.}
+#' \item{RPD}{(Regression Path Duration, Go-Past Duration) Sum of all first-pass fixation durations on a position n and all preceding positions in the time period between the first fixation on n and the first fixation on anything to the right of n.}
+#' \item{CRPD}{(Cumulative Regression Path Duration) The CRPD of position n is the total amount of time a participant spent reading the sentence until reaching region n+1. It is the sum of the RPDs of all preceding regions and the RPD of the current region.}
+#' \item{RRT}{(Re-reading Time) Sum of all second-pass fixation durations. (RRT = TFT - FPRT)}
+#' \item{RRTP}{(ReReading Time Progressive) Sum of all second-pass fixation durations on a position that took place *before* a fixation on a region further to the right. (RRTP = RBRT - FPRT)}
+#' \item{RRTR}{(ReReading Time Regressive) Sum of all second-pass fixation durations on a position that occured *after* a fixation on a region further to the right. (RRTR = TFT - RBRT)}
+#' \item{RBRC}{(Right-Bounded Regression Count) Number of regressions from this position given *before* any region further to the right has been fixated.}
+#' \item{TRC}{(Total Regression Count) Total number of regressions from this position.}
+#' \item{LPRT}{(Last-pass reading time).}
+#' \item{syll_len}{Syllable length.}
+#' \item{word_lex}{The word read.}
+#' \item{word_complex}{Word complexity (continuous measure).}
+#' \item{word_freq}{Word frequency.}
+#' \item{type_freq}{Type frequency.}
+#' \item{word_bifreq}{Word bigram frequency.}
+#' \item{type_bifreq}{Type bigram frequency.}
+#' \item{word_len}{Word length.}
+#' \item{PB}{??.}
+#' \item{IC}{Integration cost.}
+#' \item{SC}{Storage cost.}
+#' }
+#' @references
+#' \insertAllCited{}
+"df_hindi"
+
+#' Data from the Potsdam-Allahabad Hindi Corpus, an eyetracking reading experiment that records various reading measures for a newspaper corpus in Hindi. \insertCite{HusainVasishthNarayanan2015;textual}{lingpsych}
+#'
+#' The dataset is from an eyetracking study by \insertCite{HusainVasishthNarayanan2015;textual}{lingpsych}, and contains various reading measures for a newspaper corpus in Hindi. The data are from 30 subjects who read 83 items. The reading measures shown are for each word in each sentence.
+#'
+#' @format A data frame with 79,943 rows and 33 variables:
+#' \describe{
+#' \item{subj}{The subject id, ranging from 1 to 10.}
+#' \item{expt}{The experiment id.}
+#' \item{item}{The item id, ranging from 1 to 83.}
+#' \item{lang}{The language being investigated.}
+#' \item{session}{There were two sessions, one preceded by an experiment on Urdu, and one followed by Urdu.}
+#' \item{trial}{Trial id.}
+#' \item{roi}{Region of interest in the sentence.}
+#' \item{FFD}{(First-Fixation Duration) Duration of the first fixation on a position if (and only if) the fixation was progressive. Zero otherwise.}
+#' \item{FFP}{(First Fixation Progressive) 0 if material downstream was viewed before the first fixation on this position, 1 otherwise.}
+#' \item{SFD}{(Single Fixation Duration) Duration of the fixation on a position if it was the *only* fixation on this region, i.e. if no subsequent fixation on this position followed. Zero if there were several fixations on this region.}
+#' \item{FPRT}{(First Pass Reading Time, Gaze Duration) Sum of all first-pass fixation durations on a region before *any* other region is fixated. (What exactly constitutes a first pass is determined by the parameter 'regressiveFirstPass'.)}
+#' \item{RBRT}{(Right Bounded Reading Time) Sum of all first-pass fixation durations on a position before another position to the *right* is fixated. (What exactly constitutes a first pass is determined by the parameter 'regressiveFirstPass'.)}
+#' \item{TFT}{(Total Fixation Time) Sum of all fixation durations on a region.}
+#' \item{RPD}{(Regression Path Duration, Go-Past Duration) Sum of all first-pass fixation durations on a position n and all preceding positions in the time period between the first fixation on n and the first fixation on anything to the right of n.}
+#' \item{CRPD}{(Cumulative Regression Path Duration) The CRPD of position n is the total amount of time a participant spent reading the sentence until reaching region n+1. It is the sum of the RPDs of all preceding regions and the RPD of the current region.}
+#' \item{RRT}{(Re-reading Time) Sum of all second-pass fixation durations. (RRT = TFT - FPRT)}
+#' \item{RRTP}{(ReReading Time Progressive) Sum of all second-pass fixation durations on a position that took place *before* a fixation on a region further to the right. (RRTP = RBRT - FPRT)}
+#' \item{RRTR}{(ReReading Time Regressive) Sum of all second-pass fixation durations on a position that occured *after* a fixation on a region further to the right. (RRTR = TFT - RBRT)}
+#' \item{RBRC}{(Right-Bounded Regression Count) Number of regressions from this position given *before* any region further to the right has been fixated.}
+#' \item{TRC}{(Total Regression Count) Total number of regressions from this position.}
+#' \item{LPRT}{(Last-pass reading time).}
+#' \item{syll_len}{Syllable length.}
+#' \item{word_lex}{The word read.}
+#' \item{word_complex}{Word complexity (continuous measure).}
+#' \item{word_freq}{Word frequency.}
+#' \item{type_freq}{Type frequency.}
+#' \item{word_bifreq}{Word bigram frequency.}
+#' \item{type_bifreq}{Type bigram frequency.}
+#' \item{word_len}{Word length.}
+#' \item{PB}{??.}
+#' \item{IC}{Integration cost.}
+#' \item{SC}{Storage cost.}
+#' }
+#' @references
+#' \insertAllCited{}
+"df_hindi_full"
