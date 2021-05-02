@@ -1,6 +1,6 @@
-#' Data from an experiment involving an agreement attraction design with Likert ratings and accuracy of response \insertCite{AnnaLphd;textual}{bcogsci}
+#' Data from an experiment involving an agreement attraction design with Likert ratings and accuracy of response \insertCite{AnnaLphd;textual}{lingpsych}
 #'
-#' The dataset, from experiment 1 in chapter 4 of \insertCite{AnnaLphd;textual}{bcogsci}, contains the responses from 4,296 subjects who participated in an internet-based study that elicited Likert ratings and question-response accuracies for a single sentence they were shown. There were two levels of a factor called attractor (levels: match and mismatch) and two levels of another factor called interference (levels: interference and no interference).
+#' The dataset, from experiment 1 in chapter 4 of \insertCite{AnnaLphd;textual}{lingpsych}, contains the responses from 4,296 subjects who participated in an internet-based study that elicited Likert ratings and question-response accuracies for a single sentence they were shown. There were two levels of a factor called attractor (levels: match and mismatch) and two levels of another factor called interference (levels: interference and no interference).
 #'
 #' @format A data frame with 4,296 rows and 7 variables:
 #' \describe{
