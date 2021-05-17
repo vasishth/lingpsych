@@ -239,3 +239,75 @@
 #' @references
 #' \insertAllCited{}
 "dillonE1ttnested"
+
+#' Reading times at the critical regions of the self-paced reading experiment 1 conducted by  \insertCite{SafaviEtAlFrontiers2016;textual}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of Experiment 1 of \insertCite{SafaviEtAlFrontiers2016;textual}{lingpsych}.
+#'
+#'
+#' The experiment examined sentences with four conditions: particle-verb constructions were created with either 
+#' short or long distance between the particle and verb, and with the particle being either predictable or unpredictable.
+#'
+#' All the data are available from https://github.com/vasishth/SafaviEtAl2016.
+#'
+#' @format A data frame with 1,512 rows and 5 variables:
+#' \describe{
+#'  \item{subj}{Subject id, ranging from 4 to 45.}
+#'  \item{item}{Item id, ranging from 1 to 36.}
+#' \item{rt}{Reading times in milliseconds}
+#' \item{distance}{The factor distance, with levels short and long.}
+#' \item{predability}{The factor predictability, with levels predictable and unpredictable.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_persianE1"
+
+#' Reading times at the critical regions of an eyetracking experiment conducted by  \insertCite{VBLD07;textual}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of the experiment reported in \insertCite{VBLD07;textual}{lingpsych}.
+#'
+#'
+#' The experiment examined sentences with six conditions: three conditions with negative polarity items (one grammatical, two ungrammatical), 
+#' and three with positive polarity items (two grammatical, one ungrammatical). 
+#'
+#' The data and associated code are available from https://github.com/vasishth/ProcessingPolarity.
+#'
+#' @format A data frame with 8,823 rows and 5 variables:
+#' \describe{
+#'  \item{subject}{Subject id, ranging from 1 to 48.}
+#'  \item{item}{Item id, ranging from 1 to 36.}
+#' \item{condition}{The conditions labels, ranging from a to f.}
+#' \item{times}{The different dependent measures from the eyetracking study.}
+#' \item{value}{The dependent measure (milliseconds).}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_polarity"
+
+#' Reading times at the critical regions of an eyetracking experiment conducted by  \insertCite{JaegerMertzenVanDykeVasishth2019;textual}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of the experiment reported in \insertCite{JaegerMertzenVanDykeVasishth2019;textual}{lingpsych}.
+#'
+#'
+#' The experiment, which is a replication attempt of Dillon et al. 2013, examined sentences with eight conditions. 
+#'
+#' The data and associated code are available from https://osf.io/reavs/.
+#'
+#' @format A data frame with 8,628 rows and 8 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{cond}{The conditions labels, ranging from a to h.}
+#' \item{acc}{Question-response accuracy.}
+#' \item{roi}{The region of interest.}
+#' \item{FPRT}{First-pass reading time.}
+#' \item{TFT}{Total fixation time.}
+#' \item{FPR}{First-pass regression.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_dillonrep"
+
