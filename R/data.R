@@ -311,3 +311,257 @@
 #' \insertAllCited{}
 "df_dillonrep"
 
+#' Simulated data with response times as a function of a between-subject 2-level factor F.
+#'
+#' The condition means are exactly 0.8 and 0.4 seconds.
+#'
+#' The data were simulated using the following R-code:
+#'
+#' set.seed(123)
+#'
+#' d <- mvrnorm(n=5, mu=c(0.8, 0.4), Sigma=diag(2)*0.2^2, empirical=TRUE)
+#'
+#' df_contrasts1 <- d %>% as.data.frame() %>% gather(key="F", value="DV") %>%
+#'   mutate(id=1:nrow(.), F=factor(F))
+#'
+#' levels(df_contrasts1$F) <- c("F1", "F2")
+#'
+#' @format A data frame with 10 rows and 3 variables:
+#' \describe{
+#' \item{F}{Between subject factor with factor levels F1 and F2}
+#' \item{DV}{Dependent variable, response time in seconds}
+#' \item{id}{Subject index}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_contrasts1"
+
+
+#' Simulated data with response times from a lexical decision task as a function of a 3-level between-subject factor "word class".
+#'
+#' The simulated data contains data from word classes "nouns", "verbs", and "adjectives". Word class is manipulated between subjects here (usually it is a within-subject manipulation).
+#' The condition means are exactly 500, 450, and 400 milliseconds for nouns, verbs, and adjectives words.
+#'
+#' The data were simulated using the following R-code:
+#'
+#' set.seed(123)
+#'
+#' d2 <- mvrnorm(n=4, mu=c(500, 450, 400),
+#'               Sigma=diag(3)*20^2, empirical=TRUE)
+#'
+#' df_contrasts2 <- d2 %>% as.data.frame() %>%
+#'   gather(key="F", value="DV") %>%
+#'   mutate(id=1:nrow(.), F=factor(F))
+#'
+#' levels(df_contrasts2$F) <- c("nouns", "verbs", "adjectives")
+#'
+#' df_contrasts2$DV <- round(df_contrasts2$DV)
+#'
+#' @format A data frame with 12 rows and 3 variables:
+#' \describe{
+#' \item{F}{Between subject factor word class with factor levels "nouns", "verbs", and "adjectives"}
+#' \item{DV}{Dependent variable, response time in milliseconds}
+#' \item{id}{Subject index}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_contrasts2"
+
+
+#' Simulated data with response times as a function of a 4-level between-subject factor.
+#'
+#' The condition means are exactly 10, 20, 10, and 40.
+#' It could be assumed that the four factor levels `F1` to `F4` reflect levels of word frequency, including the levels `low`, `medium-low`, `medium-high`, and `high` frequency words, and that the dependent variable (DV) reflects some response time.
+#'
+#' The data were simulated using the following R-code:
+#'
+#' set.seed(123)
+#'
+#' d3 <- mvrnorm(n=5, mu=c(10, 20, 10, 40), Sigma=diag(4)*10^2, empirical=TRUE)
+#'
+#' df_contrasts3 <- d3 %>% as.data.frame() %>% gather(key="F", value="DV") %>%
+#'   mutate(id=1:nrow(.), F=factor(F))
+#'
+#' levels(df_contrasts3$F) <- c("F1", "F2", "F3", "F4")
+#'
+#' @format A data frame with 12 rows and 3 variables:
+#' \describe{
+#' \item{F}{Between subject factor with factor four levels (F1, F2, F3, F4)}
+#' \item{DV}{Dependent variable}
+#' \item{id}{Subject index}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_contrasts3"
+
+
+#' Simulated data with response times from a 2 x 2 between subject design.
+#'
+#' The condition means are exactly 10, 20, 10, and 40; means and standard deviations are exactly the same as in `df_contrasts3`.
+#'
+#' The data were simulated using the following R-code:
+#'
+#' set.seed(123)
+#'
+#' d4 <- mvrnorm(n=5, mu=c(10, 20, 10, 40), Sigma=diag(4)*10^2, empirical=TRUE)
+#'
+#' df_contrasts4 <- d4 %>% as.data.frame() %>% gather(key="A", value="DV") %>%
+#'   mutate(id=1:nrow(.), B=factor(A), A=factor(A))
+#'
+#' levels(df_contrasts4$A) <- c("A1","A1","A2","A2")
+#'
+#' levels(df_contrasts4$B) <- c("B1","B2","B1","B2")
+#'
+#' @format A data frame with 12 rows and 3 variables:
+#' \describe{
+#' \item{A}{Between subject factor with two levels (A1, A2)}
+#' \item{B}{Between subject factor with two levels (B1, B2)}
+#' \item{DV}{Dependent variable}
+#' \item{id}{Subject index}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_contrasts4"
+
+
+#' Simulated data with response times with a 2-level between subject factor and IQ as covariate: no interaction.
+#'
+#' In the data, the influence of IQ on response time is exactly the same in both conditions F1 and F2. However, the mean response time and mean IQ differs between conditions F1 and F2.
+#'
+#' The data were simulated using the following R-code:
+#'
+#' set.seed(123)
+#'
+#' N <- 30
+#'
+#' mu1 <- c(225, 85)
+#'
+#' mu2 <- c(200,115)
+#'
+#' sd1 <- 40
+#'
+#' sd2 <- 15
+#'
+#' r1 <- r2 <- -0.4
+#'
+#' sigma1 <- matrix(c(sd1^2,r1*sd1*sd2,r1*sd1*sd2,sd2^2),nrow=2)
+#'
+#' sigma2 <- matrix(c(sd1^2,r2*sd1*sd2,r2*sd1*sd2,sd2^2),nrow=2)
+#'
+#' d5a <- mvrnorm(n=N, mu=mu1, Sigma=sigma1, empirical=TRUE)
+#'
+#' d5b <- mvrnorm(n=N, mu=mu2, Sigma=sigma2, empirical=TRUE)
+#'
+#' df_contrasts5 <- rbind(data.frame(F="F1", d5a), data.frame(F="F2", d5b))
+#'
+#' names(df_contrasts5)[2:3] <- c("RT","IQ")
+#'
+#' df_contrasts5$id <- 1:nrow(df_contrasts5)
+#'
+#' df_contrasts5$F  <- factor(df_contrasts5$F)
+#'
+#' @format A data frame with 60 rows and 4 variables:
+#' \describe{
+#' \item{F}{Between subject factor with factor two levels (F1, F2)}
+#' \item{RT}{Dependent variable response time (RT)}
+#' \item{IQ}{Between-subject covariate (IQ)}
+#' \item{id}{Subject index}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_contrasts5"
+
+
+#' Simulated data with response times with a 2-level between subject factor and IQ as covariate: interaction present.
+#'
+#' In the data, the influence of IQ on response time differs between conditions F1 and F2.
+#'
+#' The data were simulated using the following R-code:
+#'
+#' set.seed(123)
+#'
+#' N <- 30
+#'
+#' mu1 <- c(200,100)
+#'
+#' mu2 <- c(220,100)
+#'
+#' sd1 <- 40
+#'
+#' sd2 <- 15
+#'
+#' r1 <-  0.0
+#'
+#' r2 <- -0.6
+#'
+#' sigma1 <- matrix(c(sd1^2,r1*sd1*sd2,r1*sd1*sd2,sd2^2),nrow=2)
+#'
+#' sigma2 <- matrix(c(sd1^2,r2*sd1*sd2,r2*sd1*sd2,sd2^2),nrow=2)
+#'
+#' d6a <- mvrnorm(n=N, mu=mu1, Sigma=sigma1, empirical=TRUE)
+#'
+#' d6b <- mvrnorm(n=N, mu=mu2, Sigma=sigma2, empirical=TRUE)
+#'
+#' df_contrasts6 <- rbind(data.frame(F="F1", d6a), data.frame(F="F2", d6b))
+#'
+#' names(df_contrasts6)[2:3] <- c("RT","IQ")
+#'
+#' df_contrasts6$id <- 1:nrow(df_contrasts6)
+#'
+#' df_contrasts6$F  <- factor(df_contrasts6$F)
+#'
+#' @format A data frame with 60 rows and 4 variables:
+#' \describe{
+#' \item{F}{Between subject factor with factor two levels (F1, F2)}
+#' \item{RT}{Dependent variable response time (RT)}
+#' \item{IQ}{Between-subject covariate (IQ)}
+#' \item{id}{Subject index}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_contrasts6"
+
+
+#' Simulated data with a binomial response from a 2 x 2 between subject design.
+#'
+#' The dependent variable could be successful task performance. The condition means are exactly 0.2, 0.5, 0.2, and 0.8.
+#'
+#' The data were simulated using the following R-code:
+#'
+#' set.seed(123)
+#'
+#' N <- 50
+#'
+#' d7 <- data.frame(A  =factor(rep(c("A1","A1","A2","A2"), each=N)),
+#'
+#'                  B  =factor(rep(c("B1","B2","B1","B2"), each=N)),
+#'
+#'                  pDV=       rep(c( 0.2, 0.5, 0.2, 0.8), each=N))
+#'
+#' tmp <- c(seq(0,1,length=N)[sample(N)], seq(0,1,length=N)[sample(N)],
+#'
+#'          seq(0,1,length=N)[sample(N)], seq(0,1,length=N)[sample(N)])
+#'
+#' d7$pDV <- ifelse(d7$pDV > tmp, 1, 0)
+#'
+#' d7$id <- 1:nrow(d7)
+#'
+#' df_contrasts7 <- tibble(d7)
+#'
+#' @format A data frame with 12 rows and 3 variables:
+#' \describe{
+#' \item{A}{Between subject factor with two levels (A1, A2)}
+#' \item{B}{Between subject factor with two levels (B1, B2)}
+#' \item{pDV}{Dependent variable: successful task performance (0 = no success versus 1 = success)}
+#' \item{id}{Subject index}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_contrasts7"
