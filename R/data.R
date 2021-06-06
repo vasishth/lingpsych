@@ -286,9 +286,9 @@
 #' \insertAllCited{}
 "df_polarity"
 
-#' Reading times at the critical regions of a self-paced reading experiment conducted by  \insertCite{smith2021encoding;textual}{lingpsych}.
+#' Reading times at the critical region (verb) of a self-paced reading experiment conducted by  \insertCite{smith2021encoding;textual}{lingpsych}.
 #'
-#' Reading times at the critical region of sentences of the experiment reported in \insertCite{smith2021encoding;textual}{lingpsych}.
+#' Reading times at the critical region of sentences of experiment 1 reported in \insertCite{smith2021encoding;textual}{lingpsych}.
 #'
 #'
 #' The experiment examined sentences with four conditions (a 2x2 design). 
@@ -311,6 +311,32 @@
 #' \insertAllCited{}
 "df_smithE1"
 
+#' Reading times at the critical region (verb) of a self-paced reading experiment conducted by  \insertCite{smith2021encoding;textual}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 2 reported in \insertCite{smith2021encoding;textual}{lingpsych}.
+#'
+#'
+#' The experiment examined sentences with eight conditions (a 2x2x2 design). 
+#' One factor, labeled SemFactor, is semantic similarity of a noun 2 with the subject of the sentence (noun 1); the levels are labeled SemSim (semantically similar) and SemDissim 
+#' (semantically dissimilar). The second factor, labeled N2Factor, marks whether the 
+#' second noun phrase was singular (N2sg) or plural (N2pl) marked. The third factor
+#' is VerbFactor, which marks whether the verb is singular (Vsg) or plural (Vpl) marked.
+#'
+#' The data and associated code are available from https://osf.io/hjrkn/.
+#'
+#' @format A data frame with 3,459 rows and 6 variables:
+#' \describe{
+#'  \item{Participant}{Subject id.}
+#'  \item{StimSet}{Item id.}
+#' \item{RT}{Reading times in milliseconds at the critical region.}
+#' \item{N2Factor}{The two levels of a factor representing the number marking on the second noun.}
+#' \item{SemFactor}{The two levels of a factor representing the number marking on the second noun.}
+#' \item{VerbFactor}{The two levels of a factor representing the number marking on the verb.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_smithE2"
 
 #' Reading times at the critical regions of an eyetracking experiment conducted by  \insertCite{JaegerMertzenVanDykeVasishth2019;textual}{lingpsych}.
 #'
