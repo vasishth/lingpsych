@@ -3,7 +3,7 @@
 \docType{data}
 \name{df_smithE1}
 \alias{df_smithE1}
-\title{Reading times at the critical regions of a self-paced reading experiment conducted by  \insertCite{smith2021encoding;textual}{lingpsych}.}
+\title{Reading times at the critical region (verb) of a self-paced reading experiment conducted by  \insertCite{smith2021encoding;textual}{lingpsych}.}
 \format{
 A data frame with 3,441 rows and 5 variables:
 \describe{
@@ -18,7 +18,7 @@ A data frame with 3,441 rows and 5 variables:
 df_smithE1
 }
 \description{
-Reading times at the critical region of sentences of the experiment reported in \insertCite{smith2021encoding;textual}{lingpsych}.
+Reading times at the critical region of sentences of experiment 1 reported in \insertCite{smith2021encoding;textual}{lingpsych}.
 }
 \details{
 The experiment examined sentences with four conditions (a 2x2 design). 
