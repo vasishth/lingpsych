@@ -344,13 +344,13 @@
 #'
 #'
 #' The experiment examined sentences with eight conditions (a 2x2x2 design). 
-#' One factor, labeled SemFactor, is semantic similarity of a noun 2 with the subject of the sentence (noun 1); the levels are labeled SemSim (semantically similar) and SemDissim 
-#' (semantically dissimilar). The second factor, labeled N2Factor, marks whether the 
-#' second noun phrase was singular (N2sg) or plural (N2pl) marked. The third factor
-#' is VerbFactor, which marks whether the verb is singular (Vsg) or plural (Vpl) marked.
+#' This self-paced experiment examined sentences with eight conditions (a 2x2x2 design). 
+#' One factor is relative clause type (object or subject relative); 
+#' another factor is memory load (three or one items held in memory); 
+#' the third factor is nountype, which represents items held in memory that 
+#' are either similar or dissimilar to the nouns in the sentences. 
 #'
-#' The data and associated code are available from https://osf.io/hjrkn/.
-#'
+#'#'
 #' @format A data frame with 1,440 rows and 7 variables:
 #' \describe{
 #'  \item{subj}{Subject id.}
