@@ -338,6 +338,35 @@
 #' \insertAllCited{}
 "df_smithE2"
 
+#' Reading times at the critical region () of a self-paced reading experiment conducted by  \insertCite{fedorenko06;textual}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 2 reported in \insertCite{fedorenko06;textual}{lingpsych}.
+#'
+#'
+#' The experiment examined sentences with eight conditions (a 2x2x2 design). 
+#' One factor, labeled SemFactor, is semantic similarity of a noun 2 with the subject of the sentence (noun 1); the levels are labeled SemSim (semantically similar) and SemDissim 
+#' (semantically dissimilar). The second factor, labeled N2Factor, marks whether the 
+#' second noun phrase was singular (N2sg) or plural (N2pl) marked. The third factor
+#' is VerbFactor, which marks whether the verb is singular (Vsg) or plural (Vpl) marked.
+#'
+#' The data and associated code are available from https://osf.io/hjrkn/.
+#'
+#' @format A data frame with 1,440 rows and 7 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{RT}{Reading times in milliseconds at the critical region.}
+#' \item{rctype}{The two levels of a factor representing the relative clause type.}
+#' \item{nountype}{The two levels of a factor representing the noun type (name or occupation).}
+#' \item{load}{The two levels of a factor representing memory load (three words or one word).}
+#' \item{region}{The critical region in the sentence.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_fedorenko06"
+
+
 #' Reading times at the critical regions of an eyetracking experiment conducted by  \insertCite{JaegerMertzenVanDykeVasishth2019;textual}{lingpsych}.
 #'
 #' Reading times at the critical region of sentences of the experiment reported in \insertCite{JaegerMertzenVanDykeVasishth2019;textual}{lingpsych}.
