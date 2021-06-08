@@ -367,6 +367,263 @@
 "df_fedorenko06"
 
 
+#' Total reading times at the critical region (verb) of an eyetracking experiment conducted by  \insertCite{levy2013expectation}{lingpsych}.
+#'
+#' Total reading times at the critical region of sentences of experiment 1 reported in \insertCite{levy2013expectation;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat Hans Gerntner ... den Fussball versteckt und somit...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat Hans Gerntner ... [ADJ zur Ahndung] den Fussball versteckt...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat Hans Gerntner ... [DAT dem Sohn] den Fussball versteckt...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat Hans Gerntner ... [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt...
+#'
+#' @format A data frame with 672 rows and 5 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{dat}{The two levels of a factor representing whether 
+#' a dative phrase is in the main or subordinate clause.}
+#' \item{adj}{The two levels of a factor representing whether an adjust is in the main or subordinate clause.}
+#' \item{TFT}{Total reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_levykeller13E1"
+
+#' Total reading times at the critical region (verb) of an eyetracking experiment conducted by  \insertCite{levy2013expectation}{lingpsych}.
+#'
+#' Total reading times at the critical region of sentences of experiment 2 reported in \insertCite{levy2013expectation;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat Hans Gerntner ... den Fussball versteckt und somit...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat Hans Gerntner ... [ADJ zur Ahndung] den Fussball versteckt...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat Hans Gerntner ... [DAT dem Sohn] den Fussball versteckt...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat Hans Gerntner ... [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt...
+#'
+#' @format A data frame with 672 rows and 5 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{dat}{The two levels of a factor representing whether 
+#' a dative phrase is in the main or subordinate clause.}
+#' \item{adj}{The two levels of a factor representing whether an adjust is in the main or subordinate clause.}
+#' \item{TFT}{Total reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_levykeller13E2"
+
+#' Reading times at the critical region (verb) of a self-paced reading experiment conducted by  \insertCite{VasishthMertzenJaegerGelman2018}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 1 reported in \insertCite{VasishthMertzenJaegerGelman2018;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat Hans Gerntner ... den Fussball versteckt und somit...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat Hans Gerntner ... [ADJ zur Ahndung] den Fussball versteckt...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat Hans Gerntner ... [DAT dem Sohn] den Fussball versteckt...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat Hans Gerntner ... [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt...
+#'
+#' @format A data frame with 672 rows and 4 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{cond}{The four condition levels.}
+#' \item{rt}{Reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_VMJG18E1"
+
+#' Reading times at the critical region (verb) of aeyetracking experiment conducted by  \insertCite{VasishthMertzenJaegerGelman2018}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 2 reported in \insertCite{VasishthMertzenJaegerGelman2018;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat Hans Gerntner ... den Fussball versteckt und somit...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat Hans Gerntner ... [ADJ zur Ahndung] den Fussball versteckt...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat Hans Gerntner ... [DAT dem Sohn] den Fussball versteckt...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat Hans Gerntner ... [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt...
+#'
+#' @format A data frame with 670 rows and 4 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{condition}{The four condition levels.}
+#' \item{TFT}{Total reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_VMJG18E2"
+
+#' Reading times at the critical region (verb) of a self-paced reading experiment conducted by  \insertCite{VasishthMertzenJaegerGelman2018}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 3 reported in \insertCite{VasishthMertzenJaegerGelman2018;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat der Mitschuler, der den Fussball versteckt hat, ...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat der Mitschuler, der [ADJ zur Ahndung] den Fussball versteckt hat, ...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat der Mitschuler, der [DAT dem Sohn] den Fussball versteckt hat, ...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat der Mitschuler, der [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt hat, ...
+#'
+#' @format A data frame with 672 rows and 4 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{cond}{The four condition levels.}
+#' \item{rt}{Reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_VMJG18E3"
+
+#' Reading times at the critical region (verb) of an eyetracking experiment conducted by  \insertCite{VasishthMertzenJaegerGelman2018}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 4 reported in \insertCite{VasishthMertzenJaegerGelman2018;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat der Mitschuler, der den Fussball versteckt hat, ...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat der Mitschuler, der [ADJ zur Ahndung] den Fussball versteckt hat, ...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat der Mitschuler, der [DAT dem Sohn] den Fussball versteckt hat, ...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat der Mitschuler, der [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt hat, ...
+#'
+#' @format A data frame with 655 rows and 4 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{condition}{The four condition levels.}
+#' \item{TFT}{Total reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_VMJG18E4"
+
+#' Reading times at the critical region (verb) of a self-paced reading experiment conducted by  \insertCite{VasishthMertzenJaegerGelman2018}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 5 reported in \insertCite{VasishthMertzenJaegerGelman2018;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat Hans Gerntner ... den Fussball versteckt und somit...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat Hans Gerntner ... [ADJ zur Ahndung] den Fussball versteckt...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat der Mitschuler, der [DAT dem Sohn] den Fussball versteckt hat, ...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat der Mitschuler, der [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt hat, ...
+#'
+#' @format A data frame with 672 rows and 4 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{cond}{The four condition levels.}
+#' \item{word}{The word read in the critical region.}
+#' \item{rt}{Reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_VMJG18E5"
+
+#' Reading times at the critical region (verb) of an eyetracking experiment conducted by  \insertCite{VasishthMertzenJaegerGelman2018}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 6 reported in \insertCite{VasishthMertzenJaegerGelman2018;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat Hans Gerntner ... den Fussball versteckt und somit...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat Hans Gerntner ... [ADJ zur Ahndung] den Fussball versteckt...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat der Mitschuler, der [DAT dem Sohn] den Fussball versteckt hat, ...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat der Mitschuler, der [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt hat, ...
+#'
+#' @format A data frame with 670 rows and 4 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{condition}{The four condition levels.}
+#' \item{TFT}{Total reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_VMJG18E6"
+
+#' Reading times at the critical region (verb) of an eyetracking experiment conducted by  \insertCite{VasishthMertzenJaegerGelman2018}{lingpsych}.
+#'
+#' Reading times at the critical region of sentences of experiment 7 reported in \insertCite{VasishthMertzenJaegerGelman2018;textual}{lingpsych}.
+#'
+#' The experiment examined sentences with four conditions (a 2x2 design). 
+#' This eyetracking experiment examined sentences with four conditions (a 2x2 design). 
+#' One factor is whether a dative phrase is in the main or subordinate clause;
+#' another factor is whether an adjunct phrase is in the main or subordinate clause.
+#' 
+#' The conditions (simplified) are:
+#' a. Nachdem der Lehrer [ADJ zur Ahndung] [DAT dem Sohn] ... hat Hans Gerntner ... den Fussball versteckt und somit...
+#' b. Nachdem der Lehrer [               ] [DAT dem Sohn] ... hat Hans Gerntner ... [ADJ zur Ahndung] den Fussball versteckt...
+#' c. Nachdem der Lehrer [ADJ zur Ahndung] [            ] ... hat der Mitschuler, der [DAT dem Sohn] den Fussball versteckt hat, ...
+#' d. Nachdem der Lehrer [               ] [            ] ... hat der Mitschuler, der [ADJ zur Ahndung] [DAT dem Sohn] 
+#' den Fussball versteckt hat, ...
+#'
+#' @format A data frame with 2,384 rows and 4 variables:
+#' \describe{
+#'  \item{subj}{Subject id.}
+#'  \item{item}{Item id.}
+#' \item{condition}{The four condition levels.}
+#' \item{TFT}{Total reading times in milliseconds at the critical region.}
+#' }
+#'
+#' @references
+#' \insertAllCited{}
+"df_VMJG18E7"
+
 #' Reading times at the critical regions of an eyetracking experiment conducted by  \insertCite{JaegerMertzenVanDykeVasishth2019;textual}{lingpsych}.
 #'
 #' Reading times at the critical region of sentences of the experiment reported in \insertCite{JaegerMertzenVanDykeVasishth2019;textual}{lingpsych}.
