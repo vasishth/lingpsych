@@ -649,6 +649,25 @@
 #' \insertAllCited{}
 "df_dillonrep"
 
+#' Data from a self-paced reading experiment that records reading times in milliseconds at the post-critical region. \insertCite{swets2008underspecification;textual}{bcogsci}
+#'
+#' The dataset is from a self-paced reading experiment by \insertCite{swets2008underspecification;textual}{bcogsci}, and contains reading times from a 3x3 design. 
+#' 
+#' @format A data frame with 5,184 rows and 6 variables:
+#' \describe{
+#' \item{subj}{The subject id.}
+#' \item{item}{The item id.}
+#' \item{resp.RT}{Response times to questions.}
+#' \item{qtype}{The three levels of the between-subjects factor, question type.}
+#' \item{attachment}{The three levels of the within-subjects factor, attachment type.}
+#' \item{RT}{Reading times at the post-critical region.}
+#' }
+#' @references
+#' \insertAllCited{}
+"df_swets08"
+
+
+
 #' Simulated data with response times as a function of a between-subject 2-level factor F.
 #'
 #' The condition means are exactly 0.8 and 0.4 seconds.
