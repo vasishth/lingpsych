@@ -7,8 +7,8 @@ lingpsych has not yet been released in CRAN. Install the
 development version from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("vasishth/lingpsych")
+# install.packages("remotes")
+remotes::install_github("vasishth/lingpsych")
 ```
 
 Alternatively, download the zip archive, unzip it, and then in the R console run (the files has to be in the current working directory that R is in):
